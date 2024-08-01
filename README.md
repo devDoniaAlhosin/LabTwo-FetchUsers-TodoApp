@@ -1,6 +1,18 @@
 # LabTwo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+This project consists of a single-page application (SPA) with two main functionalities:
+  1. User Information Page: Fetches and displays user information from a JSON file.
+  2. Todo App: A simple todo application to manage tasks.
+  3. 
+# Features
+User Information Page
+  1.Fetch User Data: Retrieves user information from a JSON file.
+  2.Display Data: Simplifies and presents the data in a readable format.
+Todo App
+  1.Add Tasks: Allows users to add new tasks.
+  2.Mark as Completed: Users can mark tasks as completed by pressing on uncompleted task btn
+  3.Remove Tasks: Users can remove tasks from the list.
 
 ## Development server
 
