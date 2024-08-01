@@ -1,0 +1,28 @@
+.userList--container {
+  margin-top: 10rem;
+  /* background-color: rgb(220, 61, 61); */
+  .userList--Content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgb(194, 122, 122); */
+
+    .userList-Search {
+      width: 100%;
+      form {
+        button:first-child {
+          border: 1px solid var(--secondary-color);
+          color: var(--text);
+
+          &:hover {
+            background-color: var(--secondary-color);
+          }
+        }
+        button:nth-child(2) {
+          color: var(--text);
+        }
+      }
+    }
+  }
+}

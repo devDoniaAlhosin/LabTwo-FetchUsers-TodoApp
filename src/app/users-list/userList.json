@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "username": "Leanne Graham",
+    "email": "Sincere@april.biz",
+    "phone": "+01061642356",
+    "isAdmin": true
+  },
+  {
+    "id": 2,
+    "username": "Ervin Howell",
+    "email": "Shanna@melissa.tv",
+    "phone": "+01063526211",
+    "isAdmin": false
+  },
+  {
+    "id": 3,
+    "username": "Clementine Bauch",
+    "email": "Nathan@yesenia.net",
+    "phone": "+01033576235",
+    "isAdmin": true
+  },
+  {
+    "id": 4,
+    "username": "Patricia Lebsack",
+    "email": "Julianne.OConner@kory.org",
+    "phone": "+01047328111",
+    "isAdmin": true
+  },
+  {
+    "id": 5,
+    "username": "Chelsey Dietrich",
+    "email": "Lucio_Hettinger@annie.ca",
+    "phone": "+01045456264",
+    "isAdmin": false
+  },
+  {
+    "id": 6,
+    "username": "Mrs. Dennis Schulist",
+    "email": "Karley_Dach@jasper.info",
+    "phone": "+01024785432",
+    "isAdmin": true
+  }
+]

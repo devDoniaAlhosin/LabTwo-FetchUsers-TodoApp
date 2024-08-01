@@ -1,0 +1,24 @@
+<div class="userList--container">
+  <div class="userList--Content container">
+    <div class="userList-Search">
+      <form class="d-flex gap-2" (submit)="onSearch($event)">
+        <input
+          class="form-control me-2 p-3"
+          type="search"
+          placeholder="Search For The User"
+          aria-label="Search"
+          [(ngModel)]="searchTerm"
+          name="search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button
+          class="btn btn-outline-warning"
+          type="button"
+          (click)="onReset()"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

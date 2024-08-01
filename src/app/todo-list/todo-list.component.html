@@ -1,0 +1,38 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Task</th>
+      <th scope="col">Status</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <th scope="row">{{ task.id }}</th>
+      <td>{{ task.task }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn"
+          [ngClass]="{
+            'btn-warning': task.status === 'Not Completed',
+            'btn-success': task.status === 'Completed'
+          }"
+          (click)="ChangeText(task)"
+        >
+          {{ task.status }}
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="deleteTask(task.id)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

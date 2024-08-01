@@ -1,0 +1,22 @@
+<div class="todoInput-container">
+  <form
+    class="d-flex gap-2"
+    (submit)="addTask(taskTitle, statusTask); $event.preventDefault()"
+  >
+    <input
+      #taskTitle
+      class="form-control me-2 p-2"
+      type="search"
+      placeholder="Add Task"
+      aria-label="Search"
+    />
+    <select class="form-select" aria-label="Default select example" #statusTask>
+      <option selected>Select Task Status</option>
+      <option value="Completed">Completed</option>
+      <option value="Not Completed">Not Completed</option>
+    </select>
+    <button class="btn btn-outline-success w-25" type="submit">
+      Add To the List
+    </button>
+  </form>
+</div>

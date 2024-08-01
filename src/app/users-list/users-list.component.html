@@ -1,0 +1,70 @@
+<div class="userList--container">
+  <div class="userList--Content container">
+    <div class="userList--header">
+      <h2>Users List</h2>
+    </div>
+    <div class="userList-cards">
+      <div
+        class="d-flex align-content-center justify-content-center gap-3 flex-wrap p-0 m-0"
+      >
+        <div
+          *ngFor="let user of filteredUsers; trackBy: trackById"
+          class="card col-12 col-md-6 col-lg-3 mb-3"
+          (click)="onUserClick(user)"
+        >
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+            class="card-img-top rounded-5 rounded-top-0"
+            alt="Placeholder"
+          />
+          <div
+            class="card-body mt-2 d-flex align-content-center justify-content-between"
+          >
+            <h5 class="card-title">Personal Information</h5>
+            <span>
+              <fa-icon
+                [icon]="faStar"
+                [ngClass]="{
+                  'icon-admin': user.isAdmin,
+                  'icon-normal': !user.isAdmin
+                }"
+              ></fa-icon>
+            </span>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li
+              class="list-group-item d-flex align-content-center justify-content-start gap-3"
+            >
+              <fa-icon [icon]="faUser"></fa-icon>
+              <span>{{ user.username }}</span>
+            </li>
+            <li
+              class="list-group-item d-flex align-content-center justify-content-start gap-3"
+            >
+              <fa-icon [icon]="faEnvelope"></fa-icon>
+              <span>{{ user.email }}</span>
+            </li>
+            <li
+              class="list-group-item d-flex align-content-center justify-content-start gap-3"
+            >
+              <fa-icon [icon]="faPhone"></fa-icon>
+              <span>{{ user.phone }}</span>
+            </li>
+          </ul>
+        </div>
+        <ng-container *ngIf="filteredUsers.length === 0">
+          <div class="error--card card text-center w-100 text-lg-center">
+            <div class="card-header">Empty List</div>
+            <div class="card-body">
+              <h5 class="card-title">There are No Users Exists</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

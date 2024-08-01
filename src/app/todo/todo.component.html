@@ -1,0 +1,13 @@
+<div class="wrapper-todo">
+  <div class="container Header--todo">
+    <h1>TO-DO LIST</h1>
+
+    <app-todo-input></app-todo-input>
+    <div class="mt-3" *ngIf="TasksService.tasks.length == 0">
+      <p class="alert alert-danger">No Tasks</p>
+    </div>
+    <div class="" *ngIf="TasksService.tasks.length !== 0">
+      <app-todo-list></app-todo-list>
+    </div>
+  </div>
+</div>

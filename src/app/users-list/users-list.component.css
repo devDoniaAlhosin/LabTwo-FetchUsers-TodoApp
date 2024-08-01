@@ -1,0 +1,55 @@
+.userList--container {
+  margin: 1rem auto;
+  /* background-color: rgb(220, 61, 61); */
+  .userList--Content {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgb(194, 122, 122); */
+    .userList--header {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--text);
+        border-bottom: 3px solid var(--secondary-color);
+      }
+    }
+
+    .userList-cards {
+      padding: 2rem 0;
+      /* background-color: aqua; */
+      .card {
+        /* background-color: transparent !important; */
+        ul {
+          li {
+            span {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.error--card {
+  text-align: center;
+}
+
+.icon-admin {
+  color: green;
+}
+
+.icon-normal {
+  color: red;
+}
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}

@@ -1,0 +1,10 @@
+.wrapper-todo {
+  /* background-color: red; */
+  padding: 2rem 0;
+  margin-top: 9rem;
+  .Header--todo {
+    h1 {
+    }
+    border-bottom: 2px solid var(--secondary-color);
+  }
+}
